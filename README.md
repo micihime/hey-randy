@@ -1,47 +1,68 @@
-![Netlify examples](netlify-badge-examples.png)
+# Welcome to Remix!
 
-# Netlify Feature Tour
+- [Remix Docs](https://remix.run/docs)
+- [Netlify Functions Overview](https://docs.netlify.com/functions/overview)
 
-**Access this demo site**: https://feature-tour.netlify.app
+## Netlify Setup
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fad6792e-1c44-44db-bd79-ea74b42b0f89/deploy-status)](https://app.netlify.com/sites/feature-tour/deploys)
+1. Install the [Netlify CLI](https://docs.netlify.com/cli/get-started/):
 
-## About this example site
+```sh
+npm i -g netlify-cli
+```
 
-This site provides a path to get started learning about Netlify features.
+If you have previously installed the Netlify CLI, you should update it to the latest version:
 
-- 📚 [Docs Getting Started Tutorial](https://docs.netlify.com/get-started/?utm_medium=social&utm_source=github&utm_campaign=devex-ph&utm_content=devex-examples)
+```sh
+npm i -g netlify-cli@latest
+```
 
-## Speedily deploy your own version
+2. Sign up and log in to Netlify:
 
-Deploy your own version of this example site by selecting the Deploy to Netlify Button below. This will automatically:
+```sh
+netlify login
+```
 
-- Clone a copy of this repo to your own GitHub account
-- Create a new project in your [Netlify account](https://app.netlify.com/?utm_medium=social&utm_source=github&utm_campaign=devex&utm_content=devex-examples), linked to your new repo
-- Create an automated deployment pipeline to watch for changes on your repo
-- Build and deploy your new site
+3. Create a new site:
 
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-feature-tour&utm_medium=social&utm_source=github&utm_campaign=devex&utm_content=devex-examples)
+```sh
+netlify init
+```
 
-## Install and run this example locally
+## Development
 
-You can clone this example repo to explore its features and implementation and to run it locally.
+Ensure all packages are installed by running:
 
-```shell
-
-# 1. Clone the repository to your local development environment
-git clone git@github.com:netlify/feature-tour.git
-
-# 2. Move into the project directory
-cd feature-tour
-
-# 3. Install code dependencies
+```sh
 npm install
+```
 
-# 4. Install the Netlify CLI to let you locally serve your site using Netlify's features
-npm install -g netlify-cli
+Run
 
-# 5. Serve your site using Netlify Dev
+```sh
 netlify dev
+```
 
+Open up [http://localhost:8888](http://localhost:8888), and you're ready to go!
+
+### Serve your site locally
+
+To serve your site locally in a production-like environment, run
+
+```sh
+netlify serve
+```
+
+Your site will be available at [http://localhost:8888](http://localhost:8888). Note that it will not auto-reload when you make changes.
+
+## Deployment
+
+There are two ways to deploy your app to Netlify, you can either link your app to your git repo and have it auto deploy changes to Netlify, or you can deploy your app manually. If you've followed the setup instructions already, all you need to do is run this:
+
+```sh
+# preview deployment
+netlify deploy --build
+
+# production deployment
+netlify deploy --build --prod
 ```
