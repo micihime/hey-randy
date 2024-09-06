@@ -3,38 +3,33 @@ import Layout from '../components/layout.astro';
 ---
 
 <Layout
-  title="Deploy Previews"
-  description="See and share your changes in a production environment so you can ship with confidence. Gather feedback in your preferred project management tool right through your Deploy Previews!"
+  title="How Randy Works"
+  description="Unlike traditional reminder apps that notify you at fixed times, Randy adds an element of surprise to your routine. You set the time interval, and Randy will randomly choose moments within that window to remind you. This unpredictability helps you stay present and engaged, making Randy perfect for mindfulness exercises, habit formation, or any activity where a little randomness can boost your awareness and focus."
 >
   <main>
-    <h2>Deploy Previews.</h2>
-    <ol>
-      <li>
-        Create a new branch in your repo called{' '}
-        <code>deploy-preview-test</code>.
-      </li>
-      <li>
-        Edit <code>pages/deploy-previews.js</code> to edit the headline “Try
-        out Deploy Previews.” so it reads, “This is a Deploy Preview!”
-      </li>
-      <li>Save the change, commit it, and push it to your GitHub repo.</li>
-      <li>
-        Open a pull request against the <code>main</code> branch from the{' '}
-        <code>deploy-preview-test</code> branch.
-      </li>
-      <li>
-        Visit <a href="https://app.netlify.com">app.netlify.com</a> —
-        Netlify will automatically build the Deploy Preview.
-      </li>
-      <li>
-        Once the site is done building, visit the generated URL to access your
-        changes!
-      </li>
-    </ol>
-    <p>
-      <a href="https://docs.netlify.com/site-deploys/deploy-previews/">
-        Learn about Deploy Previews in the Netlify docs.
-      </a>
-    </p>
+    <div class="wrapper">
+      <img
+        src="/images/corgi.jpg"
+        alt="a corgi at a laptop looking scared. caption says “when you realize you made that change in production”"
+      />
+
+      <ol>
+        <li>
+          Set Your Reminder: Create a personalized reminder by naming it, adding a short summary, and writing a detailed description.
+        </li>
+        <li>
+          Choose Your Time Interval: Decide how often you'd like to be reminded—every hour, every few hours, or just a few times a day.
+        </li>
+        <li>
+          Get Random Reminders: Randy will send you notifications at random times within your chosen interval, helping you stay present and engaged.
+        </li>
+      </ol>
+
+      <p>
+        <a href="#">
+          Download Randy today and start making the most of your moments!
+        </a>
+      </p>
+    </div>
   </main>
 </Layout>
