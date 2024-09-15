@@ -13,6 +13,9 @@ export default function Header() {
           <a href="/how-it-works">About Randy</a>
         </li>
         <li>
+          <a href="/key-features">Features</a>
+        </li>
+        <li>
           <a href="/blog">Blog</a>
         </li>
       </ul>
