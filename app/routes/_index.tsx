@@ -2,8 +2,8 @@ import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Randy" },
+    { name: "description", content: "Welcome to Randy!" },
   ];
 };
 
@@ -11,43 +11,36 @@ export default function Index() {
   return (
     <main>
       <section>
-        <h2>How Randy Works?</h2>
+        <h2>Who is Randy?</h2>
         <p>
-          Unlike traditional reminder apps that notify you at fixed times, Randy adds an <strong>element of surprise to your routine</strong>. You set the time interval, and Randy will randomly choose moments within that window to remind you. This unpredictability helps you stay present and engaged, making Randy perfect for mindfulness exercises, habit formation, or any activity where a little randomness can boost your awareness and focus.
         </p>
-        <a href="/how-it-works">
-          Learn more <span>about How Randy Works</span>
-        </a>
       </section>
       <section>
         <h2>Key Features</h2>
-        <p>
-          Embrace the unexpected. Let Randy help you stay mindful, build habits, and bring a bit of spontaneity into your daily life.
-        </p>
-        <a href="/key-features">
-          Learn more <span>about Key Features</span>
-        </a>
+        <ul>
+          <li>
+            Customizable Reminders: Name your reminder, add a short summary, and write a detailed description to keep yourself motivated and focused on your goals.      
+          </li>
+          <li>
+            Flexible Time Intervals: Choose the time frame that suits your needs. Whether you want to be reminded every hour or just a few times a day, Randy adapts to your schedule.
+          </li>
+          <li>
+            Mindful Alerts: Use Randy for mindfulness practices, such as deep breathing, stretching, or simply taking a moment to check in with yourself. The random reminders will catch you off guard, helping you break out of autopilot mode.
+          </li>
+          <li>
+            Versatile Usage: While Randy is perfect for mindfulness, it&apos;s also great for reminders like taking medication, drinking water, or even sending a quick message to a loved one.
+          </li>
+        </ul>
       </section>
       <section>
         <h2>Why Randy?</h2>
         <p>
-          Start your journey to a more mindful, engaged, and present life with Randy. Whether you&apos;re looking to cultivate new habits or just need a little nudge to stay on track, Randy is the perfect companion for your daily routine.
+            Whether you&apos;re a mindfulness enthusiast, someone working on forming new habits, or just need a little help remembering important tasks, 
+            Randy is the perfect companion to keep you on track in a fun and unexpected way.
         </p>
-        <a href="/why-randy">
-          Learn more <span>about Why Randy</span>
-        </a>
-      </section>
-      <section>
-        <h2>ToDo</h2>
         <p>
-          ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo
-          <strong>
-              ToDo ToDo ToDo
-          </strong>
+            Download Randy today and start making the most of your moments!
         </p>
-        <a href="/netlify-forms">
-          Learn more <span>about ToDo</span>
-        </a>
       </section>
     </main>
   );
