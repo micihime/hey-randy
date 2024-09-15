@@ -2,11 +2,11 @@ import 'app/styles/style.css'
 
 export default function Index() {
     return (
-        <div className="footer">
+        <div className="global-footer">
             <div className="content">
-                <p>Download Here</p>
-                <p>Reach Out</p>
-                <p>Author</p>
+                <span>Download Here | </span>
+                <span>Reach Out | </span>
+                <span>Author</span>
             </div>
         </div>
     )
