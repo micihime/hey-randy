@@ -303,8 +303,8 @@ a:focus {
 }
 
 .global-footer {
-	background-color: #7FBF99;
-	color: #787878;
+	/* background-color: #7FBF99; */
+	color: #7FBF99;
 	font-size: 14px;
 	text-align: right;
 	padding: 15px 10px;
