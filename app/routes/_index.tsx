@@ -2,52 +2,42 @@ import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Randy" },
+    { name: "description", content: "Welcome to Randy!" },
   ];
 };
 
 export default function Index() {
   return (
     <main>
+      <h1>Welcome to Randy - Your Personal Reminder Assistant</h1>
       <section>
-        <h2>How Randy Works?</h2>
+        <h2>Who is Randy?</h2>
         <p>
-          Unlike traditional reminder apps that notify you at fixed times, Randy adds an <strong>element of surprise to your routine</strong>. You set the time interval, and Randy will randomly choose moments within that window to remind you. This unpredictability helps you stay present and engaged, making Randy perfect for mindfulness exercises, habit formation, or any activity where a little randomness can boost your awareness and focus.
+          Randy is not just another reminder app; it&apos;s your companion for a more mindful and present life. 
+          Whether you&apos;re looking to cultivate mindfulness, establish healthy habits, or simply stay on top 
+          of your daily tasks, Randy is here to support you in a unique and personalized way.
         </p>
-        <a href="/how-it-works">
-          Learn more <span>about How Randy Works</span>
-        </a>
-      </section>
-      <section>
-        <h2>Key Features</h2>
         <p>
-          Embrace the unexpected. Let Randy help you stay mindful, build habits, and bring a bit of spontaneity into your daily life.
+          Unlike traditional reminder apps that notify you at fixed times, Randy adds an element of surprise 
+          to your routine. You set the time interval, and Randy will randomly choose moments within that 
+          window to remind you. This unpredictability helps you stay present and engaged, making Randy 
+          perfect for mindfulness exercises, habit formation, or any activity where a little randomness can 
+          boost your awareness and focus.
         </p>
-        <a href="/key-features">
-          Learn more <span>about Key Features</span>
-        </a>
       </section>
       <section>
         <h2>Why Randy?</h2>
         <p>
-          Start your journey to a more mindful, engaged, and present life with Randy. Whether you&apos;re looking to cultivate new habits or just need a little nudge to stay on track, Randy is the perfect companion for your daily routine.
+          In a world where schedules can become overwhelming and routines monotonous, Randy introduces a 
+          refreshing twist to your day. The app&apos;s random reminders help you stay attentive, making every 
+          reminder feel new and engaging. Whether you&apos;re striving to be more present, developing a new habit, 
+          or just need a little nudge throughout the day, Randy is designed to keep you on track in an 
+          innovative way.
         </p>
-        <a href="/why-randy">
-          Learn more <span>about Why Randy</span>
-        </a>
-      </section>
-      <section>
-        <h2>ToDo</h2>
         <p>
-          ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo ToDo
-          <strong>
-              ToDo ToDo ToDo
-          </strong>
+          Download Randy today and start making the most of your moments!
         </p>
-        <a href="/netlify-forms">
-          Learn more <span>about ToDo</span>
-        </a>
       </section>
     </main>
   );
