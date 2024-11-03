@@ -22,6 +22,8 @@ export default function Index() {
                     Get Random Reminders: Randy will send you notifications at random times within your chosen interval, helping you stay present and engaged.
                 </li>
             </ol>
+            <img src="img/screenshot-notification-detail.png" alt="How Randy Works?" />
+            <img src="img/screenshot-notification-list.png" alt="How Randy Works?" />
             <p>
                 Download Randy today and start making the most of your moments!
             </p>
