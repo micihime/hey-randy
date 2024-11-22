@@ -13,17 +13,17 @@ export default function Index() {
             <h1>How Randy Works?</h1>
             <ol>
                 <li>
-                    Set Your Reminder: Create a personalized reminder by naming it, adding a short summary, and writing a detailed description.
+                    Set Your Reminder: Create a personalized reminder by naming it, adding a short summary, and writing a description.
                 </li>
                 <li>
-                    Choose Your Time Interval: Decide how often you&apos;d like to be reminded—every hour, every few hours, or just a few times a day.
+                    Choose Your Time Range: Decide when you&apos;d like to be reminded—in the mornings or during working hours, you pick what suits you best.
                 </li>
                 <li>
                     Get Random Reminders: Randy will send you notifications at random times within your chosen interval, helping you stay present and engaged.
                 </li>
             </ol>
-            <img src="img/screenshot-notification-detail.png" alt="How Randy Works?" />
-            <img src="img/screenshot-notification-list.png" alt="How Randy Works?" />
+            <img src="img/screenshot-notification-detail.png" width="200" alt="App screeenshot of a reminder" />
+            <img src="img/screenshot-notification-list.png" width="200" alt="App screeenshot of a reminder list" />
             <p>
                 Download Randy today and start making the most of your moments!
             </p>
