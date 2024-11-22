@@ -12,11 +12,10 @@ export default function Index() {
     <main>
       <h1>Key Features</h1>
       <section>
-        <h2>Key Features</h2>
         <ul>
           <li>
             <strong>Customizable Reminders:</strong> Name your reminder, add a short summary, and write 
-            a detailed description to keep yourself motivated and focused on your goals.      
+            a description to keep yourself motivated and focused on your goals.      
           </li>
           <li>
             <strong>Flexible Time Intervals:</strong> Choose the time frame that suits your needs. Whether 
@@ -29,7 +28,7 @@ export default function Index() {
           </li>
           <li>
             <strong>Versatile Usage:</strong> While Randy is perfect for mindfulness, it&apos;s also great 
-            for reminders like taking medication, drinking water, or even sending a quick message to a loved 
+            for reminders like grattitude, drinking water, or even sending a quick message to a loved 
             one.
           </li>
         </ul>
