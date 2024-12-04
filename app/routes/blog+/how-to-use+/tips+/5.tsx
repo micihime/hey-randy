@@ -1,7 +1,40 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Gratitude Practice Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Enhance your daily gratitude practice with Randy's random reminders. Learn how to cultivate appreciation and mindfulness through regular gratitude exercises throughout your day.",
+    },
+    {
+      name: "keywords",
+      content:
+        "gratitude practice, mindfulness, daily gratitude, appreciation exercises, gratitude journaling, positive psychology, Randy app, mental wellbeing, happiness practices",
+    },
+    {
+      property: "og:title",
+      content:
+        "Gratitude Practice Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your mindset with Randy's gratitude reminders. Develop a consistent gratitude practice that enhances your daily well-being and positive outlook.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {
