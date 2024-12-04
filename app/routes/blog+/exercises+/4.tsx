@@ -1,7 +1,37 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Walking Meditation Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn how to practice walking meditation in 10-15 minutes. Discover techniques for mindful walking, focusing on breath and movement to enhance your daily mindfulness practice.",
+    },
+    {
+      name: "keywords",
+      content:
+        "walking meditation, mindful walking, meditation practice, mindfulness exercise, walking techniques, mindful movement, meditation for beginners, stress reduction",
+    },
+    {
+      property: "og:title",
+      content:
+        "Walking Meditation Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your daily walks into meditation sessions. Learn simple techniques for mindful walking to reduce stress and increase present-moment awareness.",
+    },
+    { property: "og:type", content: "article" },
+    {
+      property: "og:image",
+      content: "/img/walking-meditation.png", // Add this image to your assets
+    },
+  ];
 };
 
 export default function Index() {

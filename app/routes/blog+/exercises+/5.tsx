@@ -1,7 +1,38 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title: "Loving-Kindness Meditation | Randy - Mindfulness Exercises",
+    },
+    {
+      name: "description",
+      content:
+        "Learn the practice of Loving-Kindness Meditation with Randy. Discover how to cultivate compassion, self-love, and positive emotions through this powerful mindfulness exercise.",
+    },
+    {
+      name: "keywords",
+      content:
+        "loving-kindness meditation, metta meditation, self-compassion, mindfulness practice, meditation guide, emotional wellness, mindful exercises, Randy app",
+    },
+    {
+      property: "og:title",
+      content: "Loving-Kindness Meditation | Randy - Mindfulness Exercises",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your emotional well-being with Loving-Kindness Meditation. Learn step-by-step how to practice this powerful technique for cultivating universal compassion and inner peace.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

@@ -1,7 +1,40 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Mindful Technology Use Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn how to practice mindful technology use with Randy. Discover techniques for intentional device usage, maintaining good posture, and taking mindful breaks to enhance your digital wellness.",
+    },
+    {
+      name: "keywords",
+      content:
+        "mindful technology use, digital wellness, mindful computing, healthy tech habits, screen time awareness, mindfulness exercise, Randy app, digital mindfulness",
+    },
+    {
+      property: "og:title",
+      content:
+        "Mindful Technology Use Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your relationship with technology through mindful usage practices. Learn practical techniques for more conscious and balanced digital engagement.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

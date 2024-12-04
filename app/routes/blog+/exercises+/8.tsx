@@ -1,7 +1,38 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title: "5-4-3-2-1 Grounding Exercise | Randy - Mindfulness Exercises",
+    },
+    {
+      name: "description",
+      content:
+        "Learn the powerful 5-4-3-2-1 grounding technique for anxiety and stress relief. This 5-minute mindfulness exercise helps you stay present by engaging all five senses.",
+    },
+    {
+      name: "keywords",
+      content:
+        "5-4-3-2-1 technique, grounding exercise, mindfulness practice, anxiety relief, stress management, sensory awareness, present moment, Randy app",
+    },
+    {
+      property: "og:title",
+      content: "5-4-3-2-1 Grounding Exercise | Randy - Mindfulness Exercises",
+    },
+    {
+      property: "og:description",
+      content:
+        "Master the 5-4-3-2-1 grounding method to quickly reduce anxiety and reconnect with the present moment through your five senses.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {
