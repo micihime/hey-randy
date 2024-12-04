@@ -2,8 +2,27 @@ import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Randy" },
-    { name: "description", content: "Welcome to Randy!" },
+    { title: "Randy - Your Personal Mindful Reminder Assistant" },
+    {
+      name: "description",
+      content:
+        "Randy is a unique reminder app that sends random notifications within your set time intervals to help build mindfulness, healthy habits, and maintain focus throughout your day.",
+    },
+    {
+      name: "keywords",
+      content:
+        "reminder app, mindfulness, habit formation, productivity, personal assistant, random reminders",
+    },
+    {
+      property: "og:title",
+      content: "Randy - Your Personal Mindful Reminder Assistant",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your daily routines with Randy's innovative random reminder system",
+    },
+    { property: "og:type", content: "website" },
   ];
 };
 
