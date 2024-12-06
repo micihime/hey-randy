@@ -1,7 +1,37 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Mindful Stretching Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn the practice of mindful stretching with Randy. Discover how to combine gentle stretching exercises with breath awareness for improved flexibility and mental clarity. Perfect for daily wellness routines.",
+    },
+    {
+      name: "keywords",
+      content:
+        "mindful stretching, yoga stretches, breathing exercises, mindfulness practice, body awareness, flexibility training, mindful movement, wellness routine, Randy app exercises",
+    },
+    {
+      property: "og:title",
+      content:
+        "Mindful Stretching Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your stretching routine with mindfulness. Follow Randy's guide to combine gentle stretching with breath awareness for a more centered, flexible you.",
+    },
+    { property: "og:type", content: "article" },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

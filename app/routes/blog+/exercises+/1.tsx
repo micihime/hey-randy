@@ -1,7 +1,37 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Mindful Breathing Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn a simple 5-10 minute mindful breathing exercise to reduce stress and increase focus. Perfect for beginners and experienced practitioners alike.",
+    },
+    {
+      name: "keywords",
+      content:
+        "mindful breathing, meditation, stress reduction, mindfulness exercise, breathing techniques, relaxation, mental health, wellness practice",
+    },
+    {
+      property: "og:title",
+      content:
+        "Mindful Breathing Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Master the art of mindful breathing with this simple 5-10 minute guided exercise. Perfect for reducing stress and increasing mental clarity.",
+    },
+    { property: "og:type", content: "article" },
+    {
+      property: "og:image",
+      content: "/img/mindful-breathing.png", // You'll need to add this image
+    },
+  ];
 };
 
 export default function Index() {

@@ -1,7 +1,33 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    { title: "Mindful Eating Exercise | Randy's Mindfulness Blog" },
+    {
+      name: "description",
+      content:
+        "Learn a simple 5-10 minute mindful eating exercise using everyday foods like raisins or chocolate. Discover how to enhance your eating experience through mindfulness techniques.",
+    },
+    {
+      name: "keywords",
+      content:
+        "mindful eating, mindfulness exercise, meditation with food, mindfulness practice, eating meditation, mindful eating technique",
+    },
+    {
+      property: "og:title",
+      content: "Mindful Eating Exercise | Randy's Mindfulness Blog",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your relationship with food through this simple mindful eating exercise. Perfect for beginners looking to practice mindfulness in daily life.",
+    },
+    { property: "og:type", content: "article" },
+    {
+      property: "article:published_time",
+      content: "2024-09-20T19:00:00Z",
+    },
+  ];
 };
 
 export default function Index() {

@@ -1,7 +1,40 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Stretching Reminder Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn how to use Randy for regular stretching breaks throughout your day. Discover effective ways to maintain good posture, prevent stiffness, and stay active with random stretching reminders.",
+    },
+    {
+      name: "keywords",
+      content:
+        "stretching reminders, desk exercises, posture improvement, workplace wellness, movement breaks, sedentary job tips, Randy app, healthy habits, office stretches",
+    },
+    {
+      property: "og:title",
+      content:
+        "Stretching Reminder Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your workday with Randy's stretching reminders. Get prompted for regular movement breaks to stay active and maintain better posture.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

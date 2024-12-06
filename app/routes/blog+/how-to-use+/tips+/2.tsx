@@ -1,7 +1,38 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title: "Posture Check Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn how to improve your posture with Randy's random reminders. Get timely alerts to sit up straight, adjust your seating, and maintain proper ergonomics throughout your day.",
+    },
+    {
+      name: "keywords",
+      content:
+        "posture improvement, ergonomic reminders, sitting posture, desk ergonomics, healthy posture habits, posture correction, workplace wellness, Randy app tips",
+    },
+    {
+      property: "og:title",
+      content: "Posture Check Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your posture habits with Randy's reminder system. Get gentle nudges to maintain proper posture and create a healthier workspace environment.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

@@ -1,7 +1,40 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Breathing Exercises Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn effective breathing exercises with Randy's random reminders. Discover techniques to reduce stress, improve focus, and enhance your mindfulness practice throughout the day.",
+    },
+    {
+      name: "keywords",
+      content:
+        "breathing exercises, stress reduction, mindful breathing, focus improvement, relaxation techniques, meditation practice, Randy app, wellness reminders, breathing tips",
+    },
+    {
+      property: "og:title",
+      content:
+        "Breathing Exercises Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your daily wellness routine with Randy's breathing exercise reminders. Practice stress-reducing techniques at random intervals for better mental clarity and calm.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

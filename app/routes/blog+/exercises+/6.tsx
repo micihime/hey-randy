@@ -1,7 +1,37 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Mindful Listening Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn the art of mindful listening with Randy. This 5-10 minute exercise helps you develop deeper awareness through focused attention to sounds, music, and environmental audio.",
+    },
+    {
+      name: "keywords",
+      content:
+        "mindful listening, sound awareness, mindfulness exercise, meditation practice, focused attention, mindful music, environmental sounds, Randy app exercises",
+    },
+    {
+      property: "og:title",
+      content:
+        "Mindful Listening Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Enhance your mindfulness practice with Randy's guided listening exercise. Learn to observe sounds without judgment and develop deeper awareness in just 5-10 minutes.",
+    },
+    { property: "og:type", content: "article" },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

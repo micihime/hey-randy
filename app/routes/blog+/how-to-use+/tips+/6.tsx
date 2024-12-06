@@ -1,7 +1,40 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Random Acts of Kindness Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn how to use Randy to cultivate kindness in your daily life. Get inspired with random reminders for thoughtful actions, messages, and ways to help others.",
+    },
+    {
+      name: "keywords",
+      content:
+        "random acts of kindness, kindness reminders, thoughtful actions, daily kindness, helping others, Randy app, kindness prompts, positive habits, compassion practice",
+    },
+    {
+      property: "og:title",
+      content:
+        "Random Acts of Kindness Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your daily routine with Randy's kindness reminders. Get prompted for thoughtful actions and create a positive impact in your community.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

@@ -1,7 +1,37 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Mindful Noticing Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn the simple yet powerful practice of mindful noticing. Discover how to pause throughout your day to fully experience and appreciate present moments in 1-3 minute intervals.",
+    },
+    {
+      name: "keywords",
+      content:
+        "mindful noticing, present moment awareness, mindfulness practice, mindful pauses, sensory awareness, daily mindfulness, quick meditation, mindfulness exercise",
+    },
+    {
+      property: "og:title",
+      content:
+        "Mindful Noticing Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Master the art of mindful noticing with simple 1-3 minute pauses throughout your day. Perfect for developing present moment awareness and appreciation.",
+    },
+    { property: "og:type", content: "article" },
+    {
+      property: "og:image",
+      content: "/img/mindful-noticing.png", // You'll need to add this image
+    },
+  ];
 };
 
 export default function Index() {

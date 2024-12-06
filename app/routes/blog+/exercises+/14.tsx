@@ -1,7 +1,37 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title:
+        "Mindful Coloring Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Learn the art of mindful coloring as a relaxation technique. Discover how focusing on colors, hand movements, and patterns can help you achieve mental clarity and reduce stress in just 10-15 minutes.",
+    },
+    {
+      name: "keywords",
+      content:
+        "mindful coloring, mindfulness exercise, stress relief, meditation through art, coloring therapy, mindful creativity, relaxation techniques, Randy app exercises",
+    },
+    {
+      property: "og:title",
+      content:
+        "Mindful Coloring Exercise | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your stress into calm through mindful coloring. A simple yet powerful 10-15 minute exercise combining creativity with mindfulness practice.",
+    },
+    { property: "og:type", content: "article" },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

@@ -1,7 +1,38 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title: "Mindful Journaling Exercise | Randy - Mindfulness Exercises",
+    },
+    {
+      name: "description",
+      content:
+        "Learn the practice of Mindful Journaling with Randy. Discover how to process thoughts and emotions through daily reflective writing in this 10-15 minute mindfulness exercise.",
+    },
+    {
+      name: "keywords",
+      content:
+        "mindful journaling, reflective writing, emotional processing, mindfulness practice, daily reflection, journaling exercise, mindfulness techniques, Randy app",
+    },
+    {
+      property: "og:title",
+      content: "Mindful Journaling Exercise | Randy - Mindfulness Exercises",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your self-awareness through Mindful Journaling. Learn how to use daily writing as a powerful tool for processing thoughts and emotions mindfully.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

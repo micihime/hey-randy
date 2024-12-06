@@ -1,7 +1,39 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    {
+      title: "Memory Training Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      name: "description",
+      content:
+        "Enhance your memory with Randy's random reminder system. Learn how to effectively use spaced repetition and active recall techniques to improve information retention and learning outcomes.",
+    },
+    {
+      name: "keywords",
+      content:
+        "memory training, spaced repetition, active recall, memory improvement, learning techniques, memory exercises, Randy app, memory enhancement, study methods",
+    },
+    {
+      property: "og:title",
+      content:
+        "Memory Training Tips | Randy - Your Personal Random Reminder App",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your learning process with Randy's memory training features. Use random reminders to strengthen recall and make information stick long-term.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "og:image",
+      content: "/img/screenshot-notification-detail.png",
+    },
+  ];
 };
 
 export default function Index() {

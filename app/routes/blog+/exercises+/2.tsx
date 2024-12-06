@@ -1,7 +1,34 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Blog" }, { name: "description", content: "My Blog" }];
+  return [
+    { title: "Body Scan Exercise | Randy Mindfulness Exercises" },
+    {
+      name: "description",
+      content:
+        "Learn the Body Scan meditation technique - a guided mindfulness exercise to reduce stress and increase body awareness. Perfect for beginners and experienced practitioners.",
+    },
+    {
+      name: "keywords",
+      content:
+        "body scan meditation, mindfulness exercise, stress reduction, relaxation technique, meditation for beginners, body awareness practice",
+    },
+    {
+      property: "og:title",
+      content: "Body Scan Exercise | Randy Mindfulness Exercises",
+    },
+    {
+      property: "og:description",
+      content:
+        "Discover how to perform a Body Scan meditation - a powerful mindfulness technique for stress relief and enhanced body awareness. Step-by-step guide included.",
+    },
+    { property: "og:type", content: "article" },
+    {
+      property: "og:image",
+      content: "/img/body-scan-exercise.png", // Make sure to add a relevant image
+    },
+    { name: "twitter:card", content: "summary_large_image" },
+  ];
 };
 
 export default function Index() {
